@@ -49,7 +49,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         //run(after: 3, closure: refresh)
         // Testing reload wheel  -<
         
-        numberOfPosts = 2
+        numberOfPosts = 20
         
         let query = PFQuery(className:"Posts")
         query.includeKey("author")
@@ -68,7 +68,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func loadMorePosts() {
         
-        numberOfPosts += 2
+        numberOfPosts += 10
         
         let query = PFQuery(className:"Posts")
         query.includeKey("author")
