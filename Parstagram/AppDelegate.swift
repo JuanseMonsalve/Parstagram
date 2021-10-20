@@ -11,11 +11,11 @@ import Parse
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        // --- Copy this only
+        // --- Copy this only for parse integration
         
         let parseConfig = ParseClientConfiguration {
                 $0.applicationId = "ZTpimuCD6lMffQ1pdxNKLKPaxrdyQJmXtzykRBUt" // <- APP ID
@@ -25,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.initialize(with: parseConfig)
         
         // --- end copy
+        
+       
         
         return true
     }
